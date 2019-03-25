@@ -1,0 +1,308 @@
+
+header
+  border-style: solid
+  border-width: 1px
+  border-color: #ececec
+  box-sizing: border-box
+  background-color: #ffffff
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17)
+  height: 100px
+
+.container
+  margin: 0 auto
+  max-width: 1140px
+
+.header-flex
+  display: flex
+  justify-content: space-between
+  height: 100%
+  flex-wrap: wrap
+
+.header-left
+  display: flex
+  align-items: center
+
+.header-left-span
+
+  color: $main-color-button
+  font-size: 27px
+  font-weight: 900
+  line-height: 32px
+  text-align: center
+
+body
+  font-family: 'Lato', sans-serif
+  height: 100%
+  margin: 0
+
+.logo
+  display: flex
+  align-items: center
+  color: #222222
+  font-size: 27px
+
+  font-weight: 300
+  line-height: 32px
+
+  text-align: center
+  text-decoration: none
+  margin-right: 37px
+
+.logo img
+  margin-right: 13px
+
+.form
+  display: flex
+  position: relative
+
+.header-right
+  display: flex
+  align-items: center
+  position: relative
+
+.popup
+  margin-right: 15px
+  padding: 15px
+  -webkit-animation: rotate-center 0.6s ease-in-out both 1s
+  animation: rotate-center 0.6s ease-in-out both 1s
+.popup a
+  display: block
+  padding: 15px
+@-webkit-keyframes rotate-center
+
+  0%
+    -webkit-transform: rotate(0)
+    transform: rotate(0)
+
+  100%
+    -webkit-transform: rotate(360deg)
+    transform: rotate(360deg)
+
+@keyframes rotate-center
+  0%
+    -webkit-transform: rotate(0)
+    transform: rotate(0)
+
+  100%
+    -webkit-transform: rotate(360deg)
+    transform: rotate(360deg)
+
+.popup:hover .header-hide
+  display: block
+
+.header-hide
+  width: 262px
+  position: absolute
+  top: 80px
+  padding: 10px 15px
+  left: 30px
+  border: 1px solid #ececec
+  background-color: #fff
+  border-radius: 5px
+  display: none
+
+.header-hide:before
+  content: ""
+  display: block
+  width: 7px
+  height: 7px
+  position: absolute
+  top: -5px
+  transform: rotate(45deg)
+  border-top: 1px solid #ececec
+  border-left: 1px solid #ececec
+  background: #ffffff
+
+.header-hide-up
+  display: flex
+  justify-content: space-between
+  padding-bottom: 15px
+  padding-top: 15px
+  border-bottom: 1px solid #ededed
+
+.header-hide-up-img
+  margin-right: 15px
+
+.header-hide-up-content h3
+  margin-bottom: 10px
+  color: #222222
+  font-size: 12px
+  font-weight: 700
+  text-transform: uppercase
+
+.header-hide-up-content img
+  margin-bottom: 12px
+
+.header-hide-up-content p
+  color: $main-color-button
+  font-weight: 400
+  text-transform: uppercase
+  font-size: 12px
+
+.header-hide-up-del
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  width: 75px
+
+.header-hide-midle
+  display: flex
+  justify-content: space-between
+  margin-top: 20px
+  margin-bottom: 30px
+
+.header-hide-button1
+  margin-bottom: 10px
+  background-color: #ffffff
+  padding: 15px
+  border: 1px solid #eaeaea
+  color: #4a4a4a
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+
+.header-hide-bottom a
+  text-decoration: none
+  text-align: center
+
+.header-hide-button1:hover
+  color: #ef5b70
+  border: 1px solid #ef5b70
+  cursor: pointer
+
+.header-hide-button1:active
+  color: #cccccc
+  border: 1px solid #cccccc
+
+.header-hide-midle p
+  color: #222222
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
+
+.header-hide-bottom
+  display: flex
+  flex-direction: column
+
+.header-right > a > img
+  margin-right: 26px
+
+.browse
+  border-bottom-left-radius: 3px
+  border-top-left-radius: 3px
+  border-style: solid
+  border-width: 1px
+  border-color: #e6e6e6
+  box-sizing: border-box
+  background: -webkit-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%)
+  background: -moz-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%)
+  background: -o-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%)
+  background: -ms-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%)
+  background: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%)
+  width: 87px
+  height: 38px
+  color: #222222
+  font-size: 14px
+
+  font-weight: 300
+  line-height: 32px
+
+  text-align: center
+  cursor: pointer
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+
+.browse:hover .browse-popup
+
+  display: block
+
+.browse img
+  margin-left: 8px
+
+.browse-popup
+  position: absolute
+  top: 37px
+  z-index: 1
+  left: -1px
+  border-radius: 5px
+  background-color: #ffffff
+  width: 248px
+  border: 1px solid #ececec
+  padding: 10px 15px
+  display: none
+  text-align: left
+
+.browse-popup h3
+  border-bottom: 1px solid #e8e8e8
+  color: #232323
+  font-size: 14px
+  line-height: 32px
+  text-transform: uppercase
+  letter-spacing: 0.35px
+  padding: 5px 15px 5px 0
+  margin-bottom: 15px
+  margin-top: 5px
+
+.browse-popup li
+  list-style-type: none
+  color: #4f4f4f
+  padding-left: 5px
+
+.browse-popup a
+  display: block
+  color: #646464
+  text-decoration: none
+  font-size: 14px
+  font-weight: 400
+  line-height: 28px
+  /* Text style for "Dresses ," */
+  letter-spacing: 0.35px
+
+.browse-popup a:hover
+  color: $main-color-button
+
+.browse-popup:before
+  content: ''
+  display: block
+  width: 7px
+  height: 7px
+  position: absolute
+  top: -5px
+  left: 61px
+  transform: rotate(45deg)
+  background: #fff
+  border-top: 1px solid #ececec
+  border-left: 1px solid #ececec
+
+.account-button
+  background-color: $main-color-button
+  width: 130px
+  height: 38px
+  border-radius: 3px
+  color: #ffffff
+  font-size: 15px
+  font-weight: 400
+  line-height: 32px
+  text-align: center
+  cursor: pointer
+  display: flex
+  justify-content: center
+  align-items: center
+
+.account-button:hover
+  background-color: #ffffff
+  color: $main-color-button
+  border: 1px solid $main-color-button
+  box-sizing: border-box
+
+.account-button:active
+  background-color: $main-color-button-active
+  color: white
+  border: 1px solid $main-color-button
+  box-sizing: border-box
+
+.account-button img
+  margin-left: 8px
+  margin-right: 1px

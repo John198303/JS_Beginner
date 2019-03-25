@@ -1,0 +1,11 @@
+=prefix($prop, $val)
+  -webkit-#{$prop}: #{$val}
+  -moz-#{$prop}: #{$val}
+  -ms-#{$prop}: #{$val}
+  #{$prop}: #{$val}
+
+=display($name, $val)
+  #{$name}: -webkit-#{$val}
+  #{$name}: -moz-#{$val}
+  #{$name}: -ms-#{$val}
+  #{$name}: #{$val}
