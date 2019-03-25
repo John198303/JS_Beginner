@@ -1,25 +1,36 @@
-// Первое задание
-var tc = prompt("Введите температуру в Цельсиях: ");
-var tf = parseInt((9/5) * tc + 32);
-alert("Температура в Форингейтах равна " + tf);
+const image = new Image(50, 200);
+const imgDefault = new Image(100, 200);
+const a = imgDefault.src = "img/Forma3.png";
 
-// Второе задание ???
+const goods = [
+    {title: 'MANGO PEOPLE T-SHIRT', price: 52.00, img: image.src = "img/product1.jpg"},
+    {title: 'Socks', price: 50, img: image.src = "img/product2.jpg"},
+    {title: 'Jacket', price: 350, img: image.src = "img/product3.jpg"},
+    {title: 'Shoes', price: 250, img: image.src = "img/product4.jpg"},
+];
+const renderGoodsItem = (title, price, img = a) => {
+    return `<div class="items">
+                <div class="items-photo container">
+                    <div class="photo-1 size">
+                        <a href="#" class="product">
+                            <img src = '${img}' alt="boy">
+                            <div class="product-info">
+                                <p>${title}</p>
+                                <span>${price}</span>
+                            </div>
+                        </a>
 
-//Третье задание
+                        <div class="parent-add">
+                            <a href="#"> <i class="icon-cart"></i>Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+};
 
-var name = "Василий";
-var admin = name;
-alert(admin);
+const renderGoodsList = (list) => {
+    const goodsList = list.map(item => renderGoodsItem(item.title, item.price, item.img));
+    document.querySelector('.goods-list').innerHTML = goodsList;
+};
 
-// Четвертое задание
-
-var item1 = 1000 + "108"; // 1000108
-console.log(item1);
-
-/* Пятое задание 
-
-Атрибуты async - defer
-Испрользуются для того, чтобы пока грузится внешний скрипт, браузер загружал (показывал) следующую за скриптом
-часть страницы. Разница между атрибутами - async не сохраняет относительную последовательность загрузки скриптов
-(кто быстрее загрузился, тот и выполнился), defer сохраняет относительную последовательность загрузки.
-async выполнится как только загрузится, не ждёт пока весь html документ загрузтся, defer всегда ждёт. */
+renderGoodsList(goods);
