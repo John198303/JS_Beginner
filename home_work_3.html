@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/1.css" rel="stylesheet">
+
+    <title>3</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+</head>
+<body>
+<div id="content" class="wrapper">
+    <form action="#" onsubmit="validate()" class="wrapper-form">
+
+        <fieldset>
+            <legend class="wrapper-legend">Контактная информация</legend>
+            <label for="name" class="input-style">Имя <em>*</em></label>
+            <input id="name" placeholder="Иван"  class="style">
+            <span id="wrong_name"></span>
+            <br><br>
+            <label for="telephone" class="input-style">Телефон <em>*</em></label>
+            <input id="telephone" placeholder="+7(903)955-5555"  class="style">
+            <span id="wrong_phone"></span>
+            <br><br>
+            <label for="email" class="input-style">Email <em>*</em></label>
+            <input id="email" placeholder="email@server.com"  class="style">
+            <span id="wrong_mail"></span>
+            <br><br>
+            <label for="drop" class="input-style">Выберите город</label>
+            <select id="drop" name="local" class="style"></select>
+            <br><br>
+            <label for="comments" class="input-style">Дополнительная информация</label>
+            <textarea id="comments" class="comments"></textarea>
+            <span id="wrong_comments"></span>
+
+        </fieldset>
+        <input type="submit" value="Отправить информацию" class="wrapper-submit">
+    </form>
+
+
+</div>
+
+</form>
+
+
+<script src="js/home_work_3.js"></script>
+</body>
+</html>

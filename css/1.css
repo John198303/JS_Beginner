@@ -1,0 +1,33 @@
+
+.wrapper{
+  max-width: 30%;
+  margin: 0 auto;
+}
+
+.input-style{
+  width: 150px;
+  display: block;
+  margin-left: 10%;
+  margin-bottom: 1%;
+}
+
+.style{
+  width: 40%;
+  margin-right: 5%;
+  margin-left: 10%;
+}
+.comments{
+  height: 150px;
+  width: 40%;
+  margin-left: 10%;
+}
+.wrapper-legend{
+  text-align: center;
+}
+.wrapper-submit{
+  margin-top: 2%;
+}
+#wrong_name, #wrong_phone, #wrong_mail, #wrong_comments{
+  color: #9b0013;
+  font-size: 12px;
+}
